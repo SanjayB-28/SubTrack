@@ -71,6 +71,7 @@ router.post('/transactions', async (req, res) => {
       access_token,
       start_date: startDate,
       end_date: endDate,
+      options: { count: 500, offset: 0 },
     });
 
     const transactions = response.data.transactions;
