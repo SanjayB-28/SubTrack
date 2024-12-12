@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/plaid';
+const API_URL = 'http://localhost:5001/api/plaid';
 
 export const createLinkToken = async (userId) => {
   const response = await axios.post(`${API_URL}/create_link_token`, { userId });
@@ -18,7 +18,7 @@ export const getTransactions = async (accessToken, userId) => {
   }
 
   try {
-    const response = await axios.post('http://localhost:5000/api/plaid/transactions', {
+    const response = await axios.post('http://localhost:5001/api/plaid/transactions', {
       access_token: accessToken,
       userId,
     });

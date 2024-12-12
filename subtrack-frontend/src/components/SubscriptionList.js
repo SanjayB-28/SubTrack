@@ -11,7 +11,7 @@ const SubscriptionList = ({ userId }) => {
     const fetchSubscriptions = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/subscriptions/${userId}`
+          `http://localhost:5001/api/subscriptions/${userId}`
         );
         if (response.data && response.data.subscriptions) {
           setSubscriptions(response.data.subscriptions);
@@ -29,7 +29,7 @@ const SubscriptionList = ({ userId }) => {
   const sendEmail = async () => {
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/subscriptions/send_email/${userId}`
+        `http://localhost:5001/api/subscriptions/send_email/${userId}`
       );
       setEmailStatus(response.data.message || "Email sent successfully!");
     } catch (err) {
