@@ -90,6 +90,9 @@ const Register = () => {
             InputLabelProps={{
               style: { color: "#E2E8F0" },
             }}
+            InputProps={{
+              style: { color: "#E2E8F0" }, // Text color for the input
+            }}
             sx={{
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
@@ -115,6 +118,9 @@ const Register = () => {
             InputLabelProps={{
               style: { color: "#E2E8F0" },
             }}
+            InputProps={{
+              style: { color: "#E2E8F0" }, // Text color for the input
+            }}
             sx={{
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
@@ -139,6 +145,9 @@ const Register = () => {
             onChange={(e) => setConfirmPassword(e.target.value)}
             InputLabelProps={{
               style: { color: "#E2E8F0" },
+            }}
+            InputProps={{
+              style: { color: "#E2E8F0" }, // Text color for the input
             }}
             sx={{
               "& .MuiOutlinedInput-root": {

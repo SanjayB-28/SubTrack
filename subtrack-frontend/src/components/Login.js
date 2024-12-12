@@ -73,6 +73,9 @@ const Login = ({ setUserId, setIsLoggedIn }) => {
             InputLabelProps={{
               style: { color: "#E2E8F0" },
             }}
+            InputProps={{
+              style: { color: "#E2E8F0" },
+            }}
             sx={{
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
@@ -96,6 +99,9 @@ const Login = ({ setUserId, setIsLoggedIn }) => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             InputLabelProps={{
+              style: { color: "#E2E8F0" },
+            }}
+            InputProps={{
               style: { color: "#E2E8F0" },
             }}
             sx={{
